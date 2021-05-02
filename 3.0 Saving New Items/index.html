@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracking Application</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <link href="expense.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+    <div id="container">
+        <header>
+            <h1>Expense Tracker</h1>
+        </header>
+        <main>
+            <div id="entry">
+                <div id="entryHeader">
+                    <h2>Enter an Expense</h2>
+                </div>
+                <div id="entryForm">
+                <div id="entryItem">
+                    <label for="item">Item</label>
+                    <input type="text" id="item" />
+                </div>
+                <div id="entryCost">
+                    <label for="cost">Cost</label>
+                    <input type="text" id="cost" />
+                </div>
+                <div id="entryCategory">
+                    <label for="category">Category</label>
+                    <select id="category">
+                        <option value="entertainment">Entertainment</option>
+                        <option value="food">Food</option>
+                        <option value="office">Office Expense</option>
+                        <option value="travel">Travel</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div id="paymentType">
+                    <label for="paymentMethod">Payment Method</label>
+                    <select id="paymentMethod">
+                        <option value="cash">Cash</option>
+                        <option value="credit">Credit</option>
+                        <option value="check">Check</option>
+                    </select>
+                </div>
+                <button id="btnSave">Save Item</button>
+                </div> <!-- Entry Form -->
+            </div> <!-- Entry -->
+            <div id="expenseHistory">
+                <div id="historyHeader">
+                    <h2>Expense History</h2>
+                </div>
+                <div id="historyTable">
+                    <table>
+                        <tr>
+                            <th>Date</th><th>Item</th><th>Amount</th>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <h2>Copyright 2021 | Framework Tech Media</h2>
+        </footer>
+    </div> <!-- Container -->
+    <script src="expense.js"></script>
+</body>
+</html>
